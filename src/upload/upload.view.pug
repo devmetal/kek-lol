@@ -1,0 +1,23 @@
+extends ../layout.pug
+
+block content
+  div
+    form(
+      method='POST'
+      action='/upload'
+      content-type='application/x-www-form-urlencoded'
+    )
+      div
+        label First Name
+        input(type='text' name='firstName')
+      div
+        label Last Name
+        input(type='text' name='lastName')
+      div
+        label Address
+        input(type='text' name='address')
+      div
+        label Date
+        input(type='date' name='date')
+      div
+        input(type='submit' name='save' value='save')
